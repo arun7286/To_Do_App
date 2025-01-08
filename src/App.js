@@ -23,6 +23,9 @@ function App() {
     const deleteTask = (index) => {
         setTasks(tasks.filter((_, i) => i !== index));
     };
+    const clearTasks =() => {
+        setTasks([]);
+    }
 
   return (
       <div className="APP">
@@ -40,6 +43,12 @@ function App() {
                     addTask={addTask}
                 deleteTask={deleteTask}
                 updateTask={updateTask}/>
+          {tasks.length > 0 && (
+              <button className="clear-btn" onClick={clearTasks}>
+              Clear All Tasks
+              </button>
+          )
+          }
       </div>
   );
 }
