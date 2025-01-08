@@ -1,70 +1,97 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TO - Do App 📋✅
 
-## Available Scripts
+A simple and interactive To-Do application that helps you manage your tasks effectively. This app allows users to add tasks with different attributes, track their completion status, and visualize progress with a dynamic progress bar.
 
-In the project directory, you can run:
+## Features 🌟
 
-### `npm start`
+- **Add Tasks** 📝: Easily add new tasks with a **priority**, **type**, and **status**.
+- **Task Completion** ✔️: Mark tasks as **completed** and **undo** the completion status as needed.
+- **Progress Bar** 📊: Displays the progress based on the number of completed tasks versus total tasks.
+- **Clear All** 🧹: Once a task is added, a **Clear All** button appears. This button allows you to clear all tasks at once.
+- **Dynamic UI** 💡: The **Clear All** button disappears automatically when all tasks are removed, ensuring a cleaner interface when there are no tasks.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How It Works 🛠️
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Adding a Task 📝:
+- Users can add a new task by specifying:
+  - **Priority**: Choose the urgency level of the task (🟢 for low, 🟡 for medium, 🔴 for high).
+  - **Type**: Define the category/type of the task (e.g., personal, work, etc.).
+  - **Status**: Mark the task as **completed** ✅ or **pending** ❌ at the time of adding.
 
-### `npm test`
+### Completing/Undoing Tasks ✔️🔄:
+- Tasks can be marked as **completed** ✅ when you check them off.
+- If a task is marked as completed, you can **undo** this by clicking again, switching it back to its original status.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Progress Tracker 📊:
+- A **progress bar** 🏁 is displayed that shows the percentage of completed tasks relative to the total number of tasks.
+- The progress bar updates in real-time as tasks are marked as completed or undone.
 
-### `npm run build`
+### Clear All 🧹:
+- After adding at least one task, a **Clear All** button 🧹 appears, allowing users to clear all tasks from the list.
+- The **Clear All** button automatically disappears when the task list is empty.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation 🚀
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone this repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/arun7286/to-do-app.git
+   ```
 
-### `npm run eject`
+2. Navigate to the project directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   cd to-do-app
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install dependencies (if using Node.js or any package manager like npm or yarn):
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   Or if using yarn:
 
-## Learn More
+   ```bash
+   yarn install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Run the app:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm start
+   ```
 
-### Code Splitting
+   Or:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   yarn start
+   ```
 
-### Analyzing the Bundle Size
+5. Open the app in your browser by visiting [http://localhost:3000](http://localhost:3000).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Usage 💻
 
-### Making a Progressive Web App
+- **Adding a Task** 📝: Fill in the details for priority, type, and status, then click the **Add Task** button.
+- **Marking a Task as Completed** ✔️: Simply click the checkbox next to a task to mark it as completed.
+- **Undo Completion** 🔄: Click the button again to undo the completion.
+- **Clear All** 🧹: After adding tasks, the **Clear All** button will appear. Click it to remove all tasks from the list.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Screenshots 📸
 
-### Advanced Configuration
+![image](https://github.com/user-attachments/assets/1066bd27-c1fc-417f-92de-8f5e2f1c57a2)
+![image](https://github.com/user-attachments/assets/543cbaac-5996-4f59-a514-c11d7d76f5ad)
+![image](https://github.com/user-attachments/assets/ffc68578-c04c-4a83-8c89-843daec634c0)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Technologies Used 🧰
+
+- **HTML5**: For structuring the app.
+- **CSS3**: For styling the app.
+- **JavaScript**: For dynamic behavior, handling task addition, completion, and the progress bar.
+- **React** ⚛️: For building the user interface
